@@ -8,7 +8,7 @@ from errorhandler import *
 
 #AUTH0_DOMAIN = 'meshal.auth0.com'
 AUTH0_DOMAIN = os.getenv('AUTH0_DOMAIN')
-ALGORITHMS = ['RS256']
+ALGORITHMS = os.getenv('ALGORITHMS')
 API_AUDIENCE = os.getenv('API_AUDIENCE')
 
 ## AuthError Exception
